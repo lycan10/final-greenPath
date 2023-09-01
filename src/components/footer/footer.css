@@ -1,5 +1,5 @@
 .footer{
- background-color: #003F5C;
+ background-color: #246a47;
  padding: 6rem 0 0;
  width: 100%;
 }
@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 12rem;
+    padding: 0 8rem;
 }
 .footer-top{
     width: 100%;
@@ -41,7 +41,7 @@
 .footer-company h1{
     color: white;
     margin-top: 0;
-    font-size: 33px;
+    font-size: 23px;
 }
 .footer-company ul li{
     list-style: none;
@@ -51,18 +51,17 @@
 .footer-link-cta{
     text-decoration: none;
     color: white;
-    font-size: 23px;
+    font-size: 16px;
 }
 .footer-info h1{
     color: white;
     margin-top: 0;
-    font-size: 33px;
+    font-size: 23px;
 }
 .footer-info p{
     color: white;
-    font-size: 23px;
-    line-height: 35px;
-    margin: 0;
+    font-size: 16px;
+    margin: 0 0 1rem;
 }
 .footer-bottom{
     display: flex;
@@ -71,13 +70,13 @@
     align-items: center;
     width: 100%;
     border-top: 1px solid #999;
-    padding: 1rem 12rem;
+    padding: 1rem 6rem;
 }
 .footer-bottom p{
     color: white;
 }
 .social-icon{
-    font-size: 25px;
+    font-size: 19px;
     color: white;
 }
 .footer-icon{
@@ -93,7 +92,7 @@
         padding: 0 4rem;
     }
     .footer{
-        background-color: #003F5C;
+        background-color: #246a47;
         padding: 4rem 0 0;
         width: 100%;
        }
@@ -112,7 +111,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 3rem;
+        padding: 0 2rem;
+    }
+    .footer-top{
+        margin-bottom: 2rem;   
     }
     .footer-image{
         width: 110px;
@@ -201,14 +203,24 @@
     }
     .footer-bottom p{
         font-size: 14px;
+        
+
+    }
+    .footer-bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 1rem 0rem;
     }
     .social-icon{
-        font-size: 17px;
-        color: white;
+        font-size: 15px;
+        color: red;
     }
     .footer-icon{
         margin: 0 0.2rem;
         color: white;
+        font-size: 15px;
     }
 }
 @media (max-width:350px) {

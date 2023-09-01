@@ -1,5 +1,5 @@
 .core-values{
-    padding: 15rem 4rem;
+    padding: 3rem 4rem;
     background-color: #F7F7F8;
 }
 .core-values-container{
@@ -15,8 +15,8 @@
     align-items: center;
 }
 .core-image img{
-    width: 72px;
-    height: 72px;
+    width: 52px;
+    height: 52px;
     transition: transform 0.5s;
 }         
 .core-image img:hover{
@@ -24,24 +24,24 @@
    
 } 
 .core-content h1{
-    font-size: 33px;
+    font-size: 19px;
 }
 @media (max-width: 1200px) {
     .core-values{
-        padding: 10rem 2rem;
+        padding: 3rem 2rem;
         background-color: #F7F7F8;
     }
 }
 @media (max-width: 800px) {
     .core-values{
-        padding: 10rem 2rem;
+        padding: 3rem 2rem;
     }
     .core-content h1{
-        font-size: 23px;
+        font-size: 16px;
     }
     .core-image img{
-        width: 52px;
-        height: 52px;
+        width: 32px;
+        height: 32px;
         transition: transform 0.5s;
     } 
 }
@@ -52,26 +52,26 @@
         gap:30px
     }
     .core-values{
-        padding: 4rem 3rem;
+        padding: 2rem 3rem;
         background-color: #F7F7F8;
     }
     .core-content h1{
         font-size: 16px;
     }
     .core-image img{
-        width: 42px;
-        height: 42px;
+        width: 38px;
+        height: 38px;
         transition: transform 0.5s;
     } 
 }
 @media (max-width: 400px) {
    
     .core-values{
-        padding: 4rem 2rem;
+        padding: 2rem;
         background-color: #F7F7F8;
     }
     .core-content h1{
-        font-size: 16px;
+        font-size: 14px;
     }
     .core-image img{
         width: 42px;

@@ -7,6 +7,9 @@ import {RiCloseLine, RiMenu3Line} from "react-icons/ri"
 
 const Menu = () => (
     <>
+    <li>
+            <Link className='link-cta' to='/' ><span>Home</span></Link>
+        </li>
         <li>
             <Link className='link-cta' to='/about'><span>About us</span></Link>
         </li>
@@ -42,9 +45,9 @@ const Navbar = () => {
             <div className='navbar-menu-mini '>
         {
             toggleMenu ?
-            <RiCloseLine color='white' size={30} onClick={()=>setToggleMenu(false)}/>
+            <RiCloseLine color='#246a47' size={30} onClick={()=>setToggleMenu(false)}/>
             : 
-            <RiMenu3Line color='white' size={30} onClick={()=>setToggleMenu(true)}/>
+            <RiMenu3Line color='#246a47' size={30} onClick={()=>setToggleMenu(true)}/>
         }
         {
             toggleMenu && (

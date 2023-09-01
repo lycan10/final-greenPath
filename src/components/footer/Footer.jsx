@@ -28,9 +28,9 @@ const Footer = () => {
             </div>
             <div className='footer-info'>
             <h1>Location</h1>
-                <p>No. 3 Tito Bros Street, <br/> Asokoro Abuja.
-                </p>
-                <p style={{marginTop:'0.5rem'}}>+1 (646) 357 3144</p>
+                <p>090X XXX XXXX</p>
+                <p>greenpathdevco@gmail.com</p>
+                <p>3, Tito Bros Street, Asokoro, Abuja.</p>
             </div>
         </div>
 

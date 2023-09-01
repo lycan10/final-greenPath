@@ -1,42 +1,43 @@
 .aboutH{
-    padding: 8rem 8rem;
-    position: relative;
+    padding: 4rem 6rem 8rem;
+   
 }
 .aboutH-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 0rem;
 }
 .aboutH-content{
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding-left: 4rem; 
+    padding-left: 0rem; 
 }
 .aboutH-content h1{
-    font-size: 56px;
-    line-height: 32px;
+    font-size: 23px;
+    margin: 0;
 }
 .about-us-title{
     content: "";
-    width: 80px;
-    height: 5px;
+    width: 70px;
+    height: 3px;
     background-color: #246a47;
-    margin: 1rem 0;
+    margin: 0.8rem 0;
 }
 .aboutH-content p{
-    font-size: 22px;
-    line-height: 42px;
+    font-size: 16px;
+    line-height: 27px;
     max-width: 650px;
+    font-weight: lighter;
 }
 .aboutH-content span{
-    font-size: 22px;
+    font-size: 16px;
     background-color: #246a47;
-    padding: 1rem 2rem;
+    padding: 0.8rem 2rem;
     color: white;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 .aboutH-content span:hover{
     background-color: white;
@@ -52,25 +53,46 @@
 .aboutH-image{
     display: flex;
     flex: 1;
+    padding-left: 4rem;
+    position: relative;
 }
 .aboutH-image::before{
     content: '';
     border: 5px solid #246a47;
     position: absolute;
-    width: 30%;
-    right: 14rem;
-    top: 12.5rem;
-    height: 500px ;
+    width: 80%;
+    right: 0rem;
+    top: 3rem;
+    height: 350px ;
     z-index: 0;
 }
 .aboutH-image img{
-    width: 80%;
-    height: 500px;
+    width: 90%;
+    height: 350px;
     object-fit: cover;
     z-index: 100;
 }
 
-@media (max-width: 1500px) {
+/* @media (max-width: 1500px) {
+
+    .aboutH-content{
+        padding-left: 0rem; 
+    }
+    .aboutH-image{
+        padding-left: 4rem;
+    }
+    .aboutH-image::before{
+        content: '';
+        border: 5px solid #246a47;
+        position: absolute;
+        width: 35%;
+        right: 10rem;
+        top: 8rem;
+        height: 350px ;
+        z-index: 0;
+    }
+} */
+@media (max-width: 1200px) {
     .aboutH{
         padding: 4rem 4rem 6rem;
     }
@@ -84,37 +106,16 @@
         content: '';
         border: 5px solid #246a47;
         position: absolute;
-        width: 35%;
-        right: 8rem;
-        top: 10rem;
-        height: 490px ;
-        z-index: 0;
-    }
-}
-@media (max-width: 1200px) {
-    .aboutH{
-        padding: 2rem 4rem 4rem;
-    }
-    .aboutH-content{
-        padding-left: 0rem; 
-    }
-    .aboutH-image{
-        padding-left: 2rem;
-    }
-    .aboutH-image::before{
-        content: '';
-        border: 5px solid #246a47;
-        position: absolute;
-        width: 35%;
-        right: 6rem;
-        top: 10rem;
-        height: 490px ;
+        width: 83%;
+        right: 0rem;
+        top: 2rem;
+        height: 350px ;
         z-index: 0;
     }
 }
 @media (max-width: 800px) {
     .aboutH{
-        padding: 2rem 4rem 10rem;
+        padding: 4rem 4rem;
     }
     .aboutH-container{
         display: flex;
@@ -129,29 +130,19 @@
     .aboutH-image{
         padding-left: 0;
         margin: 4rem 0 0;
+        width: 100%;
     }
     .aboutH-image img{
-        width: 550px;
+        width: 100%;
     }
     .aboutH-image::before{
-        content: '';
-        border: 5px solid #246a47;
-        position: absolute;
-        width: 70%;
-        right: 4rem;
-        top: 30rem;
-        height: 490px ;
-        z-index: 0;
+        display: none;
     }
-    .aboutH-content h1{
-        font-size: 43px;
-        line-height: 32px;
-        margin-bottom: 1rem;
-    }
+   
     .aboutH-content p{
         font-size: 16px;
         line-height: 32px;
-        max-width: 650px;
+        max-width: 100%;
         margin-top: 0;
     }
     .aboutH-button{
@@ -168,21 +159,25 @@
 }
 @media (max-width: 500px) {
     .aboutH-image{
-        display: none;
+        padding-left: 0;
+        margin: 3rem 0 0;
+        width: 100%;
+        height: 200px;
+        z-index: 0;
+    }
+    .aboutH-image img{
+        height: 100%;
+        z-index: 0;
     }
     .about-us-title{
         content: "";
-        width: 80px;
+        width: 50px;
         height: 3px;
         background-color: #246a47;
         margin: 1rem 0;
     }
     .aboutH{
         padding: 2rem 2rem 4rem;
-    }
-    .aboutH-content h1{
-        font-size: 27px;
-        margin-bottom: 0;
     }
     .aboutH-content p{
         font-size: 12px;
@@ -199,10 +194,5 @@
         padding: 0.7rem 1.7rem;
         color: white;
         border-radius: 8px;
-    }
-}
-@media (max-width: 40px) {
-    .aboutH-image{
-        display: none;
     }
 }

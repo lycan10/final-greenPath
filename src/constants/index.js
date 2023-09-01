@@ -20,19 +20,19 @@ export const cardsData = [
     {
         id: 0,
         img: <ImQuotesLeft /> ,
-        content:"This is a great investment and the only way I know to earn 12% on my money on an annual basis. I highly recommend this investment to anyone.",
+        content:"Choosing GreenPath Development was a wise decision. Their competitive prices and high-quality services make them stand out from the competition. We received exceptional value for our investment, and the results speak for themselves. I highly recommend GreenPath Development for their cost-effective solutions.",
         author: '- Mark P.'
     },
     {
         id: 1,
         img: <ImQuotesLeft /> ,
-        content: "I use this for my IRA. I get much better returns than anything else I've found.",
+        content: "Working with GreenPath Development has been an absolute pleasure. Their meticulous planning and attention to detail are commendable. They delivered our project on time, exceeding our expectations. The level of professionalism and expertise displayed by their team is unmatched.",
         author: '- Thomas C.'
     },
     {
         id: 2,
         img: <ImQuotesLeft /> ,
-        content:"I open my mailbox and there's a check. It makes my day!",
+        content:"GreenPath Development offers exceptional value for the quality of service they provide. Their competitive prices, combined with their commitment to excellence, make them an outstanding choice. We couldn't be happier with our decision to work with them.",
         author: '- Adewale O.'
     },
 ]

@@ -1,20 +1,38 @@
 .contact{
     background-color: #fff;
 }
-
+.contact-header-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+.contact-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .contact-header{
     position: relative;
 }
 .contact-image img{
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     object-fit: cover;
 }
 .contact-title{
     position: absolute;
-    bottom: 10rem;
-    left: 10%;
-    z-index: 10;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
 }
 .contact-title h1{
     font-size: 82px;
@@ -38,13 +56,13 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     z-index: 4;
 }
 .contact-vertical{
     content: "";
     width: 80px;
-    height: 5px;
+    height: 3px;
     background-color: #246a47;
     margin: 1rem 0;
 }
@@ -145,7 +163,7 @@
     color: #246a47;
 }
 .CD-text p{
-    font-size: 23px;
+    font-size: 14px;
     font-weight: 100;
 }
 .contact-SM{
@@ -173,12 +191,8 @@
 }
 
 @media (max-width:1500px) {
-    .contact-title{
-        bottom: 2rem;
-        left: 6%;
-    }
     .contact-title h1{
-        font-size: 78px;
+        font-size: 68px;
     }
     .contact-details h1{
         margin-bottom: 4rem;
@@ -191,11 +205,11 @@
        gap: 30px;
     }
     .CD-text h3{
-        font-size: 18px;
+        font-size: 17px;
         margin: 0;
     }
     .CD-text p{
-        font-size: 18px;
+        font-size: 12px;
         font-weight: 100;
     }
     .contact-SM{
@@ -214,10 +228,7 @@
     }
 }
 @media (max-width:1201px) {
-    .contact-title{
-        bottom: 2rem;
-        left: 4%;
-    }
+   
     .contact-title h1{
         font-size: 68px;
     }
@@ -236,7 +247,7 @@
         margin: 0;
     }
     .CD-text p{
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 100;
     }
     .contact-SM{
@@ -304,12 +315,8 @@
 }
 }
 @media (max-width:801px) {
-    .contact-title{
-        bottom: 1rem;
-        left: 4%;
-    }
     .contact-title h1{
-        font-size: 58px;
+        font-size: 51px;
     }
     .contact-info{
         display: grid;
@@ -319,11 +326,11 @@
        position: relative;
     }
     .CD-text h3{
-        font-size: 23px;
+        font-size: 21px;
         margin: 0;
     }
     .CD-text p{
-        font-size: 19px;
+        font-size: 14px;
         font-weight: 100;
     }
     .contact-SM{
@@ -380,19 +387,14 @@
     }   
     .contact-vertical{
         content: "";
-        width: 80px;
-        height: 2px;
+        width: 50px;
+        height: 3px;
         background-color: #246a47;
         margin: 0rem 0;
     }
-    .contact-title{
-        position: absolute;
-        bottom: 5rem;
-        left: 28%;
-        z-index: 7;
-    }
     .contact-title h1{
         font-size: 38px;
+        margin-top: 4rem;
     }
     .contact-address{
         margin: 2rem 0rem 0;
@@ -427,7 +429,7 @@
     }
     .contact-info{
         display: grid;
-        grid-template-columns: 130px 130px ;
+        grid-template-columns: 150px 150px ;
         gap: 30px;
         left: 0rem;
     }
@@ -458,7 +460,7 @@
         margin: 0;
     }
     .CD-text p{
-        font-size: 10px;
+        font-size: 9px;
         font-weight: 100;
     }
     .contact-SM{
@@ -517,16 +519,16 @@
         height: 520px;
         padding: 2rem 1rem 4rem;
         background-color: #f1f1f1;
-        width: 90.5%;
-    }
-    .contact-title{
-        position: absolute;
-        bottom: 4rem;
-        left: 20%;
-        z-index: 7;
+        width: 90%;
     }
     .contact-title h1{
-        font-size: 43px;
+        font-size: 33px;
+    }
+    .contact-info{
+        display: grid;
+        grid-template-columns: 140px 140px ;
+        gap: 30px;
+        left: -0.5rem;
     }
     .CD-image{
         margin-right: 0.5rem;

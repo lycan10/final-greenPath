@@ -1,15 +1,23 @@
 .parallax-container {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     overflow: hidden;
   }
-  
+  .service-header-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
   .services-header-opacity {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     z-index: 4;
   }
   
@@ -27,17 +35,13 @@
   
   .services-opacity {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 70vh;
     z-index: 4;
   }
   
   .services-title {
     position: absolute;
-    bottom: 10rem;
-    left: 10%;
-    z-index: 10;
+    z-index: 5;
+    margin-top: 4rem;
   }
   
   .services-title h1 {
@@ -45,14 +49,22 @@
     font-weight: bold;
     color: white;
   }
-  
-  .services-page-title {
+  .services-page-container{
     width: 100%;
-    margin: 4rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  
+  .services-page-title {
+    padding: 0 0rem;
+    margin: 4rem 0 1rem;
+  }
   .services-main-content {
-    padding: 0rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
   
   .services-page-main {
@@ -65,13 +77,14 @@
   }
   
   .services-page-content h1 {
-    font-size: 43px;
+    font-size: 23px;
     font-weight: bold;
+    margin: 0;
   }
   
   .services-page-content p {
     max-width: 800px;
-    font-size: 23px;
+    font-size: 16px;
     line-height: 38px;
     color: #5A5A5A;
   }
@@ -80,49 +93,54 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     gap: 20px;
-    padding: 0rem 8rem;
   }
   
   .services-main-content h1 {
-    font-size: 43px;
+    font-size: 23px;
     font-weight: bold;
+    margin: 0;
   }
   
   .services-main-content p {
     max-width: 800px;
-    font-size: 23px;
-    line-height: 38px;
-    color: #5A5A5A;
+    font-size: 16px;
+    line-height: 27px;
+    color: #5A5A5A; 
+    margin: 0 0 2rem;
   }
-  
+  .services-cards-content {
+    margin-right: 2rem;
+  }
   .services-cards-content h1 {
     font-size: 20px;
+    margin: 0.8rem 0;
   }
   
   .services-cards-content p {
-    max-width: 300px;
-    font-size: 16px;
+    max-width: 340px;
+    font-size: 17px;
     line-height: 26px;
     color: #5A5A5A;
     margin: 0;
   }
   
-  .services-content h1 {
-    font-size: 43px;
+  .services-page-content h1 {
+    font-size: 23px;
     font-weight: bold;
+    margin: 0;
   }
   
-  .services-content p {
+  .services-page-content p {
     max-width: 800px;
-    font-size: 23px;
-    line-height: 38px;
+    font-size: 16px;
+    line-height: 27px;
     color: #5A5A5A;
   }
   
   .services-vertical {
     content: "";
     width: 80px;
-    height: 5px;
+    height: 3px;
     background-color: #246a47;
     margin: 1rem 0;
   }
@@ -215,7 +233,7 @@
     color: white;
     z-index: 400;
     width: 80%;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 27px;
   }
   .services-video{
@@ -227,12 +245,6 @@
     object-fit: cover;
   }
 @media (max-width: 1450px) {
-    .services-title {
-      position: absolute;
-      bottom: 2rem;
-      left: 7%;
-      z-index: 10;
-    }
     
     .services-title h1 {
       font-size: 78px;
@@ -268,8 +280,8 @@
       color: white;
       z-index: 400;
       width: 80%;
-      font-size: 14px;
-      line-height: 27px;
+      font-size: 12px;
+      line-height: 23px;
     }
 
   }
@@ -282,8 +294,21 @@
       transition: 0.5s;
       cursor: pointer;
     }
+    .services-title h1 {
+      font-size: 68px;
+      font-weight: bold;
+      color: white;
+    }
+    .services-cards-content p {
+      max-width: 100%;
+      font-size: 16px;
+      line-height: 26px;
+      color: #5A5A5A;
+      margin: 0;
+    }
     .our-spec-content p{
-      font-size: 12px;
+      font-size: 14px;
+      padding: 0.1rem 1rem;
     }
     .services-video{
       margin: 3rem 6rem
@@ -301,7 +326,35 @@
       color: white;
       z-index: 400;
       width: 80%;
-      font-size: 11px;
+      font-size: 10px;
+      line-height: 18px;
+    }
+    .services-main-content {
+      padding: 0rem 0rem;
+    }
+   
+    .services-main-content p{
+      margin: 0rem 0rem 1.5rem;
+      max-width: 100%;
+    }
+    .services-page-main {
+      margin: 2rem 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .services-page-title {
+      padding: 0 6rem;
+     
+    }
+    .services-page-cards {
+      padding: 0rem 0rem;
+    }
+    .services-page-cards h1{
+      font-size: 16px;
+    }
+    .services-page-cards p{
+      font-size: 14px;
       line-height: 20px;
     }
 }
@@ -311,47 +364,44 @@
     font-weight: bold;
     color: white;
   }
-  
   .services-page-title {
-    width: 100%;
-    margin: 2rem 0;
+    margin-top: 4rem;
+    padding: 0 3rem;
   }
-  .services-main-content h1 {
-    font-size: 33px;
-    font-weight: bold;
-  }
+
   
   .services-main-content p {
     max-width: 480px;
     font-size: 16px;
     line-height: 28px;
     color: #5A5A5A;
+    margin-top: 0;
   }
   
   .services-main-content {
-    padding: 0rem 2rem;
+    padding: 0rem 0rem;
   }
   
   .services-page-main {
     margin: 2rem 0;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding-left: 2rem;
-    width: 0;
+    align-items: center;
   }
   
   .services-page-cards {
-    padding: 0rem 2rem;
+    padding: 0rem 0rem;
   }
   .services-cards-content h1 {
-    font-size: 18px;
+    font-size: 13px;
+    margin: 0.6rem 0;
   }
-  
   .services-cards-content p {
-    max-width: 150px;
-    font-size: 14px;
-    line-height: 21px;
+    max-width: 100%;
+    font-size: 11px;
+    line-height: 16px;
+    color: #5A5A5A;
+    margin: 0 0 1rem;
   }
   .our-specialization {
     display: grid;
@@ -363,9 +413,9 @@
     height: 170px;
   }
   .services-page-content h1 {
-    font-size: 33px;
+    font-size: 27px;
     font-weight: bold;
-    margin: 0rem 0rem 2rem;
+    margin: 0rem 0rem 0rem;
   }
   
   .services-page-content p {
@@ -378,7 +428,7 @@
     background-color: azure;
     padding: 0rem 2rem;
     font-weight: 200;
-    font-size: 12px;
+    font-size: 10px;
     z-index: 0;
   }
   .services-video{
@@ -389,22 +439,34 @@
     height: 300px;
     object-fit: cover;
   }
+  .services-cards-content{
+    margin-right: 0;
+  }
 }
 @media (max-width: 500px) {
   .services-main-content {
     padding: 0rem 2rem;
   }
+  .services-page-title{
+    padding: 0;
+  }
   .services-title {
     position: absolute;
-    bottom: 5rem;
-    left: 35%;
-    z-index: 10;
+    z-index: 5;
+    margin-top: 0rem;
   }
-  .services-title h1{
-    font-size: 43px;
+  .services-title h1 {
+    font-size: 68px;
+    font-weight: bold;
+    margin-top: 0;
   }
   .services-main-content h1{
-    font-size: 28px;
+    font-size: 23px;
+    margin: 0 0 0.5rem;
+  }
+  .services-main-content p{
+    margin: 1rem 0 0.5rem;
+    max-width: 100%;
   }
   .services-page-cards {
     display: grid;
@@ -453,8 +515,8 @@
   }
   .services-vertical{
     content: "";
-        width: 80px;
-        height: 2px;
+        width: 50px;
+        height: 3px;
         background-color: #246a47;
         margin: 0rem 0;
   }
@@ -466,10 +528,45 @@
     height: 200px;
     object-fit: cover;
   }
+  .services-cards-content p {
+    max-width: 270px;
+    font-size: 10px;
+    line-height: 22px;
+    color: #5A5A5A;
+    margin: 0;
+  }
+  .services-page-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 0 4rem;
+  }
+ .services-page-content{
+  padding: 2rem;
+  }
+  .services-page-content h1 {
+    font-size: 23px;
+    font-weight: bold;
+    margin: 1.5rem 0rem 1rem;
+  }
+  
+  .services-page-content p {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 28px;
+    color: #5A5A5A;
+  }
+  .services-main-content h1{
+  font-size: 23px;}
 }
 @media (max-width: 450px) {
   .services-main-content {
     padding: 0rem 2rem;
+  }
+  .services-page-title {
+    width: 100%;
+    margin: 2rem 0 2rem;
   }
   .services-title {
     position: absolute;
@@ -480,9 +577,7 @@
   .services-title h1{
     font-size: 43px;
   }
-  .services-main-content h1{
-    font-size: 28px;
-  }
+
   .services-page-cards {
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -534,13 +629,7 @@
     z-index: 1;
     cursor: pointer;
   }
-  .services-vertical{
-    content: "";
-        width: 80px;
-        height: 2px;
-        background-color: #246a47;
-        margin: 0rem 0;
-  }
+
   .services-video{
     margin: 1rem 2rem
   }
@@ -591,28 +680,50 @@
     height: 170px;
     object-fit: cover;
   }
+  .services-cards-content h1 {
+    font-size: 16px;
+  }
+  
+  .services-cards-content p {
+    max-width: 300px;
+    font-size: 11px;
+    line-height: 18px;
+    color: #5A5A5A;
+    margin: 0;
+  }
+  .services-page-title {
+    width: 100%;
+    margin: 2rem 0 2rem;
+  }
 }
 @media (max-width: 350px) {
   .services-main-content {
     padding: 0rem 2rem;
   }
-  .services-title {
-    position: absolute;
-    bottom: 4rem;
-    left: 28%;
-    z-index: 7;
-  }
+ 
   .services-title h1{
-    font-size: 43px;
+    font-size: 38px;
   }
   .services-main-content h1{
-    font-size: 28px;
+    font-size: 18px;
+  }
+  .services-main-content p{
+    font-size: 11px;
+    line-height: 18px;
+
   }
   .services-page-cards {
     display: grid;
     grid-template-columns: 1fr 1fr ;
     gap: 20px;
     padding: 0rem 2rem;
+  }
+  .services-page-cards h1 {
+    font-size: 13px;
+  }
+  .services-page-cards p {
+    font-size: 9px;
+    line-height: 15px;
   }
   .our-specialization {
     display: grid;
@@ -659,5 +770,16 @@
     height: 140px;
     object-fit: cover;
   }
+  .services-page-content h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 1rem;
+  }
   
+  .services-page-content p {
+    max-width: 250px;
+    font-size: 11px;
+    line-height: 18px;
+    color: #5A5A5A;
+  }
 }

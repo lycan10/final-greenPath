@@ -25,24 +25,23 @@
 .header-text{
     position: absolute;
     z-index: 4;
-    top: 23rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin-top: 5rem;
 }
 .header-text h1{
-    font-size: 82px;
+    font-size: 72px;
     font-weight: bold;
     color: white;
     margin: 0;
-    line-height: 103px;
-    max-width: 1000px;
+    line-height: 90px;
+    max-width: 800px;
     text-align: center;
 }
 .header-text p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: #cbd2de;
     margin-top: 1.5rem;
@@ -79,13 +78,21 @@
 .header-text{
     position: absolute;
     z-index: 4;
-    top: 39rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
 }
 }
 @media (max-width: 1201px) {
     
 .header-text{
-    top: 34rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
 }
 .header-text h1{
     font-size: 62px;
@@ -109,7 +116,11 @@
 @media (max-width: 801px) {
     
     .header-text{
-        top: 21rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
     }
     .header-text h1{
         font-size: 47px;
@@ -136,7 +147,10 @@
 @media (max-width: 501px) {
     
     .header-text{
-        top: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .header-text h1{
         font-size: 36px;
@@ -167,7 +181,10 @@
 @media (max-width: 350px) {
     
     .header-text{
-        top: 16rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .header-text h1{
         font-size: 26px;

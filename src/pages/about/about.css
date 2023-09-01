@@ -1,33 +1,58 @@
-.about-header{
-    position: relative;
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-header{  
+}
+.about-header-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
 }
 .about-opacity{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     z-index: 4;
 }
 .offer{
-    padding:2rem 0rem 5rem;
-    background:#F9F9F9
+    padding:2rem 4rem 5rem;
+    background:#F9F9F9;
 }
 .our-team {
     padding:2rem 4rem
 }
+.about-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+}
 .about-image img{
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     object-fit: cover;
 }
 .about-title{
     position: absolute;
-    bottom: 10rem;
-    left: 10%;
-    z-index: 5;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
 }
 .about-title h1{
-    font-size: 82px;
+    font-size: 72px;
     font-weight: bold;
     color: white;
 }
@@ -36,8 +61,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    margin: 6rem 8rem;
+    margin: 4rem 4rem 2rem;
 }
 .about-content-image{
     flex: 1;
@@ -51,12 +75,12 @@
     position: absolute;
     width: 90%;
     right: 1rem;
-    top: 3rem;
-    height: 700px ;
+    top: 1.8rem;
+    height: 400px ;
     z-index: -50;
 }
 .about-content-image img{
-    height: 100%;
+    height: 400px;
     width: 90%;
     object-fit: cover;
     z-index: 100;
@@ -64,44 +88,46 @@
 
 .about-content{
     flex: 1;
-    padding: 2rem 6rem;
+    padding: 0rem 3rem 2rem;
 }
 .about-content1{
     flex: 1;
-    padding: 2rem 9rem;
 }
 .about-content2{
     flex: 1;
-    padding: 2rem 6rem;
 }
 .about-content h1{
-    font-size: 43px;
+    font-size: 23px;
     font-weight: bold;
+    margin: 0 0 1rem;
 }
 .about-content1 h1{
-    font-size: 43px;
+    font-size: 23px;
     font-weight: bold;
+    margin: 0 0 1rem;
 }
 .about-content2 h1{
-    font-size: 43px;
+    font-size: 23px;
     font-weight: bold;
+    margin: 0 0 1rem;
 }
 .about-content p{
     max-width: 800px;
-    font-size: 23px;
-    line-height: 38px;
+    font-size: 16px;
+    line-height: 27px;
     color: #5A5A5A;
 }
 .about-content1 p{
     max-width: 800px;
-    font-size: 23px;
-    line-height: 38px;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 2rem;
     color: #5A5A5A;
 }
 .about-content2 p{
     max-width: 800px;
-    font-size: 23px;
-    line-height: 38px;
+    font-size: 16px;
+    line-height: 27px;
     color: #5A5A5A;
 }
 
@@ -109,7 +135,7 @@
 .about-vertical{
     content: "";
     width: 80px;
-    height: 5px;
+    height: 3px;
     background-color: #246a47;
     margin: 1rem 0;
 }
@@ -119,12 +145,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 4rem 0;
+    padding: 2rem 0 4rem;
 }
 .mission{
     background-color: white;
     border-radius: 1rem;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -135,19 +161,20 @@
     height: 400px;
 }
 .mission h3{
-
+    font-size: 23px;
+    margin-bottom: 0rem;
 }
 .mission p{
     width: 400px;
     font-size: 16px;
-    line-height: 42px;
+    line-height: 39px;
     color: #5A5A5A;
 
 }
 .vision{
     background-color: white;
     border-radius: 1rem;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 0 2rem;
     margin: 3rem;
@@ -158,29 +185,29 @@
     height: 400px;
 }
 .vision h3{
-    
+    font-size: 23px;
+    margin-bottom: 0rem;
 }
 .vision p{
     width: 400px;
     font-size: 16px;
-    line-height: 42px;
+    line-height: 33px;
     color: #5A5A5A;
 }
 .team-members{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center; 
+    justify-content: space-between;
+    align-items: flex-start; 
     padding: 2rem 0rem
 }
 .team-members img{
     object-fit: cover;
-    width: 470px;
+    width: 438px;
     height: 600px
 }
 .team-image{
     position: relative;
-    margin: 0 1rem;
 }
 .team-image::before{
     content: '';
@@ -189,7 +216,7 @@
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
-    z-index: 9999;
+    z-index: 12;
 }
 .team-image:hover::before{
     background-color: transparent;
@@ -198,14 +225,24 @@
 }
 .team-image h1{
     margin: 1rem 0;
+    font-size: 23px;
+}
+.team-image p{
+    margin: 1rem 0;
+    font-size: 16px;
 }
 
-@media (max-width:1450px) {
+/* @media (max-width:1450px) {
+    
     .about-title{
         position: absolute;
-        bottom: 2rem;
-        left: 8%;
-        z-index: 5;
+        margin-top: 4rem;
+    }
+    .about-content{
+        flex: 1;
+        padding: 0;
+        margin-top: 4rem;
+        margin-left: 2rem;
     }
     .about-content h1{
         font-size: 38px;
@@ -215,9 +252,15 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         height: 600px;
         margin: 6rem 4rem;
+    }
+    .about-content-image img{
+        height: 500px;
+        width: 90%;
+        object-fit: cover;
+        z-index: 100;
     }
     .about-content-image::before{
         content: '';
@@ -226,34 +269,62 @@
         width: 90%;
         right: 1rem;
         top: 3rem;
-        height: 600px ;
+        height: 500px ;
         z-index: -50;
     }
     .offer{
-        margin:2rem 2rem;
-        padding: 0rem
+        padding:2rem 4rem 5rem;
+        background:#F9F9F9;
     }
     .our-team {
-        padding:2rem 2rem
+        padding:2rem 4rem
     }
     .about-content{
         flex: 1;
-        padding: 2rem 0rem;
     }
     .about-content1{
-        padding: 2rem 2rem;
     }
     .about-content2{
-        padding: 2rem 3rem;
     }
-    
-}
+    .team-members img{
+        object-fit: cover;
+        width: 438px;
+        height: 600px
+    }
+} */
 @media (max-width:1201px) {
     .about-title{
         position: absolute;
-        bottom: 3rem;
-        left: 6%;
-        z-index: 5;
+        margin-top: 4rem;
+    }
+    .about-header-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+    }
+    .about-content-image img{
+        height: 470px;
+        width: 90%;
+        object-fit: cover;
+        z-index: 100;
+    }
+    .team-members img{
+        object-fit: cover;
+        width: 300px;
+        height: 400px
+    }
+    .team-image::before{
+        content: '';
+        width: 100%;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        z-index: 9999;
     }
     .about-title h1{
         font-size: 63px;
@@ -262,24 +333,17 @@
     }
     .about-content{
         height: 500px;
-        margin: 0rem 2rem;
+        margin: 2rem 3rem 0;
     }
-    .about-content-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 500px;
-        margin: 8rem 2rem;
-    }
+
     .about-content h1{
-        font-size: 33px;
+        font-size: 23px;
         font-weight: bold;
     }
     .about-content p{
         max-width: 600px;
         font-size: 16px;
-        line-height: 38px;
+        line-height: 27px;
         color: #5A5A5A;
     }
     .about-content-container{
@@ -288,16 +352,16 @@
         justify-content: center;
         align-items: center;
         height: 500px;
-        margin: 4rem 4rem;
+        margin: 3rem 4rem;
     }
     .about-content-image::before{
         content: '';
         border: 5px solid #246a47;
         position: absolute;
         width: 90%;
-        right: 1rem;
-        top: 2rem;
-        height: 500px ;
+        right: 0rem;
+        top: 3rem;
+        height: 450px ;
         z-index: -50;
     }
     .offer{
@@ -314,32 +378,9 @@
     .about-content1{
         padding: 2rem 0rem;
     }
-    .about-content1 h1{
-        font-size: 33px;
-        font-weight: bold;
-    }
-    .about-content1 p{
-        max-width: 800px;
-        font-size: 20px;
-        line-height: 33px;
-        color: #5A5A5A;
-    }
-    .about-content2{
-        padding: 2rem 0.5rem 0rem;
-    }
-    .about-content2 h1{
-        font-size: 33px;
-        font-weight: bold;
-    }
-    .about-content2 p{
-        max-width: 800px;
-        font-size: 20px;
-        line-height: 33px;
-        color: #5A5A5A;
-    }
+   
     .team-image{
         position: relative;
-        margin: 0 0.5rem;
     }
     .our-team {
         padding:2rem 4rem
@@ -350,7 +391,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 4rem 0;
+        padding: 2rem 0;
     }
     .mission{
         background-color: white;
@@ -392,15 +433,31 @@
         color: #5A5A5A;
     }
 }
-@media (max-width:901px) {
+@media (max-width:801px) {
     .about-title{
         position: absolute;
-        bottom: 2rem;
-        left: 7%;
-        z-index: 5;
+        margin-top: 4rem;
+    }
+    .about-header-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+    }
+    .team-image::before{
+        content: '';
+        width: 100%;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        z-index: 9999;
     }
     .about-title h1{
-        font-size: 53px;
+        font-size: 43px;
         font-weight: bold;
         color: white;
     }
@@ -412,16 +469,7 @@
     .about-content-image{
         display: none;
     }
-    .about-content h1{
-        font-size: 33px;
-        font-weight: bold;
-    }
-    .about-content p{
-        max-width: 700px;
-        font-size: 16px;
-        line-height: 38px;
-        color: #5A5A5A;
-    }
+
     .about-content-container{
         display: flex;
         flex-direction: row;
@@ -432,11 +480,12 @@
     }
     .offer{
         margin:2rem 0rem;
-        padding: 0rem 2rem ;
+        padding: 0rem 4rem ;
         background-color: transparent;
+        
     }
     .our-team {
-        padding:2rem 2rem
+        padding:2rem 4rem
     }
     .about-content{
         flex: 1;
@@ -445,31 +494,8 @@
     .about-content1{
         padding: 2rem 0rem;
     }
-    .about-content1 h1{
-        font-size: 33px;
-        font-weight: bold;
-        margin: 0;
-    }
-    .about-content1 p{
-        max-width: 800px;
-        font-size: 20px;
-        line-height: 33px;
-        color: #5A5A5A;
-    }
-    .about-content2{
-        padding: 0rem 0.5rem 0rem;
-    }
-    .about-content2 h1{
-        font-size: 33px;
-        font-weight: bold;
-        margin: 0rem 0rem 2rem;
-    }
-    .about-content2 p{
-        max-width: 500px;
-        font-size: 20px;
-        line-height: 33px;
-        color: #5A5A5A;
-    }
+
+
     .team-image{
         position: relative;
         margin: 0 0rem;
@@ -488,7 +514,7 @@
         height: 500px;
     }
     .our-team {
-        padding:3rem 2rem;
+        padding:3rem 4rem;
         background-color: #F9F9F9;
     }
     .m-and-v{
@@ -514,8 +540,17 @@
 }
 @media (max-width:501px) {
     .about-title{
-        bottom: 5rem;
-        left: 32%;
+        position: absolute;
+        margin-top: 4rem;
+    }
+    .about-header-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
     }
     .about-title h1{
         font-size: 38px;
@@ -529,7 +564,7 @@
         display: none;
     }
     .about-content h1{
-        font-size: 32px;
+        font-size: 19px;
         font-weight: bold;
     }
     .about-content p{
@@ -558,8 +593,8 @@
         padding: 2rem 2rem 1rem;
     }
     .about-content1 h1{
-        font-size: 32px;
-        margin: 0;
+        font-size: 19px;
+        margin: 0rem 0rem 0.5em;
     }
     .about-content1 p{
         max-width: 420px;
@@ -571,9 +606,9 @@
         padding: 0rem 0rem 0rem;
     }
     .about-content2 h1{
-        font-size: 32px;
+        font-size: 19px;
         font-weight: bold;
-        margin: 0rem 0rem 0em;
+        margin: 0rem 0rem 0.5em;
     }
     .about-content2 p{
         max-width: 320px;
@@ -595,17 +630,21 @@
         background-color: #f9f9f9;
     }
     .mission{
-        margin: 2rem 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 0 2rem;
-        height: 300px;
+        height: 250px;
     }
     .mission h3{
-    
+        margin: 0rem 0rem 0.5em;
+        font-size: 23px;
     }
     .mission p{
-        width: 300px;
-        font-size: 17px;
-        line-height: 32px;
+        width: 260px;
+        font-size: 12px;
+        line-height: 26px;
         color: #5A5A5A;
         margin: 0;
     }
@@ -616,15 +655,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 330px;
+        height: 250px;
     }
     .vision h3{
-        
+        margin: 0rem 0rem 0.5em;
+        font-size: 23px;
     }
     .vision p{
-        width: 300px;
-        font-size: 17px;
-        line-height: 32px;
+        width: 260px;
+        font-size: 12px;
+        line-height: 26px;
         color: #5A5A5A;
         margin: 0;
     }
@@ -660,7 +700,7 @@
         background-color: rgba(0, 0, 0, 0.6);
         position: absolute;
         top: 0;
-        z-index: 9999;
+        z-index: 9;
     }
     .about-vertical{
         content: "";
@@ -671,6 +711,20 @@
     }
 }
 @media (max-width: 380px) {
+    .about-title{
+        position: absolute;
+        margin-top: 4rem;
+    }
+    .about-content h1{
+        font-size: 19px;
+    }
+    .about-content1 h1{
+        font-size: 19px;
+    }
+    .about-content2 h1{
+        font-size: 19px;
+    }
+
     .team-members img{
         object-fit: cover;
         width: 310px;
@@ -738,6 +792,15 @@
     }
     .about-content1{
         padding-top: 0;
+    }
+    .about-content h1{
+        font-size: 19px;
+    }
+    .about-content1 h1{
+        font-size: 19px;
+    }
+    .about-content2 h1{
+        font-size: 19px;
     }
     .m-and-v{
         margin: 12rem 0 0;

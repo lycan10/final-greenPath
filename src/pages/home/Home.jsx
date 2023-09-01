@@ -1,6 +1,5 @@
 import React from 'react'
 import './home.css'
-import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import Review from '../../components/review/Review'
 import AboutH from '../../components/aboutH/AboutH'
